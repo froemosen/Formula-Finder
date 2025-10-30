@@ -1,0 +1,205 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.sidebar {
+    width: 220px;
+    background: linear-gradient(135deg, #3a53ff, #3044e8);
+    padding: 24px;
+    border-radius: 18px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    font-size: 2.2em;
+    font-weight: 680;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 24px;
+    margin-top: 0;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family: 'Inter', sans-serif;
+    margin: 0px 0;
+    display: block;
+    transition: color 0.25s ease, transform 0.2s ease;
+    font-weight: 500;
+}
+
+.sidebar a:hover {
+    color: #5ea4ff;
+    transform: translateX(4px);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.sidebar .signature {
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-top: 32px;
+    opacity: 0.9;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+
+
+
+
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.textbox {
+    max-width: 500px;
+    padding: 20px;
+    margin: 50px auto; /* Center-align the box */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Keep the text left-aligned */
+
+    h1 {
+        text-align: center;
+    }
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+.symbol-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+    margin: 20px auto; /* Center-align the box */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.symbol-box .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.small-button {
+    background-color: #cfcfcf;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 2px 6px 2px 6px;
+    font-size: 14px;
+    border-radius: 2px;
+    margin: -10px 15px 20px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; /* Ensure it looks like a button */
+    text-align: center; /* Center text inside */
+}
+.small-button:hover {
+    background-color: #999999;
+    transform: scale(1.05); /* Add hover effect for better visibility */
+}
+
+.infobutton {
+    /* Let this be a small button with a question mark */
+    background-color: #cfcfcf;
+    color: rgb(0, 8, 85);
+    border: none;
+    padding: 0px 4px 0px 4px;
+    font-size: 14px;
+    border-radius: 0px;
+    margin: 0px 50px 0px 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; /* Ensure it looks like a button */
+    text-align: center; /* Center text inside */
+}
+.infobutton:hover {
+    background-color: #999999;
+    transform: scale(1.05); /* Add hover effect for better visibility */
+}
+
+.info-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}

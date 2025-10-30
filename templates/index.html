@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formula Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>Navigation</h2>
+        <a href="/">Formula Finder</a> <br>
+        <a href="/example">Example</a> <br>
+        <a href="/about">About</a>
+
+
+        <div class="signature">
+            © 2025 Kristian Anton Hedegaard
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Formula Finder</h1>
+    
+        <p>Input your values below to find the corresponding formula.</p>
+        <p>Use LaTeX symbols or units in the text fields, or select from the menu below.</p>
+        
+        <div style="display: flex; gap: 10px;" id="inputGroup0">
+            <input type="text" class="latexInput" id="symbol0" placeholder="Symbol" style="width: 50px;">
+            <input type="text" class="latexInput" id="value0" placeholder="Value" style="width: 150px;">
+            <input type="text" class="latexInput" id="unit0" placeholder="Unit" style="width: 50px;">
+        </div>
+        
+        <div style="text-align: center; margin-top: 10px;">
+            <button class="small-button" onclick="addInputField()">+</button1>
+            <button class="small-button" onclick="removeInputField()">-</button1>
+        </div>
+
+        <button onclick="findFormula()">Find Formulas!</button>
+
+        <p id="result"></p>
+
+        <button onclick="fetchGreeting("hello")">Fetch Greeting</button>
+        <p id="greeting"></p>
+    </div>
+
+    <div class = "symbol-box">
+        <h2>Symbols</h2>
+        <p>Here you can press symbols to input them into the text fields.</p>
+        <div class="symbol-row">
+            <button onmousedown="insertSymbol(event, '\\frac{}{}')">\( \frac{a}{b} \)</button>
+            <button onmousedown="insertSymbol(event, '\\rho')">\( \rho \)</button>
+            <button onmousedown="insertSymbol(event, '\\Delta')">\( \Delta \)</button>
+            <button onmousedown="insertSymbol(event, '\\eta')">\( \eta \)</button>
+            <button onmousedown="insertSymbol(event, '\\cdot')">\( \cdot \)</button>
+            <button onmousedown="insertSymbol(event, '\\Omega')">\( \Omega \)</button>
+            <button onmousedown="insertSymbol(event, '\\alpha')">\( \alpha \)</button>
+            <button onmousedown="insertSymbol(event, '\\lambda')">\( \lambda \)</button>
+            <button onmousedown="insertSymbol(event, '\\sin')">\( \sin \)</button>
+            <button onmousedown="insertSymbol(event, '\\cos')">\( \cos \)</button>
+            <button onmousedown="insertSymbol(event, '\\tan')">\( \tan \)</button>
+            <button onmousedown="insertSymbol(event, '\\theta')">\( \theta \)</button>
+            <button onmousedown="insertSymbol(event, '\\varphi_n')">\( \varphi_n \)</button>
+            <button onmousedown="insertSymbol(event, '\\nu')">\( \nu \)</button>
+            <button onmousedown="insertSymbol(event, '\\mu')">\( \mu \)</button>
+            <button onmousedown="insertSymbol(event, '\\sqrt{}')">\( \sqrt{x} \)</button>
+            <button onmousedown="insertSymbol(event, '\\pi')">\( \pi \)</button>
+            <button onmousedown="insertSymbol(event, '\\Psi_n(x)')">\( \Psi_n(x) \)</button>
+            <button onmousedown="insertSymbol(event, '\\Psi')">\( \Psi \)</button>
+            <button onmousedown="insertSymbol(event, '\\tilde{}')">\( \tilde{x} \)</button>
+            <button onmousedown="insertSymbol(event, '\\ln')">\( \ln \)</button>
+            <button onmousedown="insertSymbol(event, '\\partial')">\( \partial \)</button>
+            <button onmousedown="insertSymbol(event, '\\int_{}^{}')">\( \int_{a}^{b} \)</button>
+            <button onmousedown="insertSymbol(event, '\\ge')">\( \ge \)</button>
+            <button onmousedown="insertSymbol(event, '\\hbar')">\( \hbar \)</button>
+            <button onmousedown="insertSymbol(event, '\\tau')">\( \tau \)</button>
+            <button onmousedown="insertSymbol(event, '\\sum')">\( \sum \)</button>
+            <button onmousedown="insertSymbol(event, '\\Phi')">\( \Phi \)</button>
+            
+
+
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+</body>
+
+
+</html>

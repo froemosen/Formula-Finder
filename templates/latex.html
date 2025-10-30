@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LaTeX Input and Dropdown</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        .line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        input, select {
+            padding: 8px;
+            font-size: 1em;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="line">
+    <input type="text" id="latexInput" placeholder="Enter LaTeX (e.g. \alpha)">
+    
+    <select id="dropdown">
+        <option value="color:red">Red</option>
+        <option value="color:blue">Blue</option>
+        <option value="color:green">Green</option>
+    </select>
+
+    <button onclick="renderLatex()">Render</button>
+</div>
+
+<div id="output"></div>
+
+<script>
+function renderLatex() {
+    const input = document.getElementById("latexInput").value;
+    const dropdown = document.getElementById("dropdown").value;
+
+    const outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = `<span style="${dropdown}">\\(${input}\\)</span>`;
+
+    MathJax.typesetPromise();
+}
+</script>
+
+<input type="text" class="latexInput" id="box1" placeholder="Box 1">
+<input type="text" class="latexInput" id="box2" placeholder="Box 2">
+
+<button onmousedown="insertSymbol(event, '\\alpha')">α</button>
+<button onmousedown="insertSymbol(event, '\\beta')">β</button>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+v = \frac{d}{t} \quad \quad \text{velocity [$v$] = $\frac{m}{s}$, distance [$d$] = $m$, time [$t$] = $s$}
+\rho = \frac{m}{V} \quad \quad \text{density [$\rho$] = $\frac{kg}{m^3}$, mass [$m$] = $kg$, volume [$V$] = $m^3$}
+p = \frac{F}{A} \quad \quad \text{pressure [$p$] = $\frac{N}{m^2}$, force [$F$] = $N$, area [$A$] = $m^2$}
+W = F \cdot \Delta s \quad \quad \text{work [$W$] = $J$, force [$F$] = $N$, displacement [$\Delta s$] = $m$}
+P = \frac{E}{t} \quad \quad \text{power [$P$] = W$, energy [$E$] = $J$, time [$t$] = $s$}
+\eta = \frac{E_{out}}{E_{in}} \quad \quad \text{efficiency [$\eta$] = $0-1$, output energy [$E_{out}$] = $J$, input energy [$E_{in}$] = $J$}
+\Delta E = Q + A \quad \quad \text{change in energy [$\Delta E$] = $J$, heat [$Q$] = $J$, work done [$A$] = $J$}
+C = c \cdot m \quad \quad \text{heat capacity [$C$] = $J/K$, specific heat capacity [$c$] = $J/(kg \cdot K)$, mass [$m$] = $kg$}
+C_{system} = c_A m_A + c_B m_B \quad \quad \text{system heat capacity [$C_{system}$] = $J/K$, specific heat capacity [$c_A, c_B$] = $J/(kg \cdot K)$, mass [$m_A, m_B$] = $kg$}
+Q = C \Delta t \quad \quad \text{heat [$Q$] = $J$, heat capacity [$C$] = $J/K$, change in temperature [$\Delta t$] = $K$}
+Q = c m \Delta t \quad \quad \text{heat [$Q$] = $J$, specific heat capacity [$c$] = $J/(kg \cdot K)$, mass [$m$] = $kg$, change in temperature [$\Delta t$] = $K$}
+Q = L_s m \quad \quad \text{heat [$Q$] = $J$, specific latent heat of fusion [$L_s$] = $J/kg$, mass [$m$] = $kg$}
+Q = L_f m \quad \quad \text{heat [$Q$] = $J$, specific latent heat of vaporization [$L_f$] = $J/kg$, mass [$m$] = $kg$}
+p = \rho g h \quad \quad \text{pressure [$p$] = $Pa$, density [$\rho$] = $\frac{kg}{m^3}$, gravitational acceleration [$g$] = $\frac{m}{s^2}$, height [$h$] = $m$}
+p = p_1 + p_2 \quad \quad \text{total pressure [$p$] = $Pa$, partial pressure 1 [$p_1$] = $Pa$, partial pressure 2 [$p_2$] = $Pa$}
+p = p_{air} + p_{vapor} \quad \quad \text{total pressure [$p$] = $Pa$, air pressure [$p_{air}$] = $Pa$, vapor pressure [$p_{vapor}$] = $Pa$}
+T = (t + 273) K \quad \quad \text{absolute temperature [$T$] = $K$, temperature [$t$] = $^\circ C$}
+p V = n R T \quad \quad \text{pressure [$p$] = $Pa$, volume [$V$] = $m^3$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{Pa \cdot m^3}{mol \cdot K}$, absolute temperature [$T$] = $K$}
+\frac{p_i V_i}{T_i} = \frac{p_f V_f}{T_f} \quad \quad \text{initial pressure [$p_i$] = $Pa$, initial volume [$V_i$] = $m^3$, initial temperature [$T_i$] = $K$, final pressure [$p_f$] = $Pa$, final volume [$V_f$] = $m^3$, final temperature [$T_f$] = $K$}
+A = -p \Delta V \quad \quad \text{work done [$A$] = $J$, constant pressure [$p$] = $Pa$, change in volume [$\Delta V$] = $m^3$}
+I = \frac{Q}{t} \quad \quad \text{current [$I$] = $A$, charge [$Q$] = $C$, time [$t$] = $s$}
+U = \frac{E}{Q} \quad \quad \text{voltage [$U$] = $V$, energy [$E$] = $J$, charge [$Q$] = $C$}
+|Q| = N e \quad \quad \text{total charge [$|Q|$] = $C$, number of elementary charges [$N$], elementary charge [$e$] = $C$}
+U = R I \quad \quad \text{voltage [$U$] = $V$, resistance [$R$] = $\Omega$, current [$I$] = $A$}
+P = U I \quad \quad \text{power [$P$] = $W$, voltage [$U$] = $V$, current [$I$] = $A$}
+P = R I^2 \quad \quad \text{power [$P$] = $W$, resistance [$R$] = $\Omega$, current [$I$] = $A$}
+P = \frac{U^2}{R} \quad \quad \text{power [$P$] = $W$, voltage [$U$] = $V$, resistance [$R$] = $\Omega$}
+R = R_1 + R_2 \quad \quad \text{total resistance [$R$] = $\Omega$, resistance 1 [$R_1$] = $\Omega$, resistance 2 [$R_2$] = $\Omega$}
+\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} \quad \quad \text{total resistance [$R$] = $\Omega$, resistance 1 [$R_1$] = $\Omega$, resistance 2 [$R_2$] = $\Omega$}
+R = \rho \frac{l}{A} \quad \quad \text{resistance [$R$] = $\Omega$, resistivity [$\rho$] = $\Omega \cdot m$, length [$l$] = $m$, cross-sectional area [$A$] = $m^2$}
+\rho_t = \rho_0 (1 + \alpha_0 t) \quad \quad \text{resistivity at temperature t [$\rho_t$] = $\Omega \cdot m$, resistivity at 0$^\circ C$ [$\rho_0$] = $\Omega \cdot m$, temperature coefficient [$\alpha_0$] = $^\circ C^{-1}$, temperature [$t$] = $^\circ C$}
+R_t = R_0 (1 + \alpha_0 t) \quad \quad \text{resistance at temperature t [$R_t$] = $\Omega$, resistance at 0$^\circ C$ [$R_0$] = $\Omega$, temperature coefficient [$\alpha_0$] = $^\circ C^{-1}$, temperature [$t$] = $^\circ C$}
+U_p = -R_i I + U_0 \quad \quad \text{terminal voltage [$U_p$] = $V$, internal resistance [$R_i$] = $\Omega$, current [$I$] = $A$, open-circuit voltage [$U_0$] = $V$}
+f = \frac{1}{T} \quad \quad \text{frequency [$f$] = $Hz$, period [$T$] = $s$}
+v = \lambda f \quad \quad \text{wave speed [$v$] = $\frac{m}{s}$, wavelength [$\lambda$] = $m$, frequency [$f$] = $Hz$}
+n = \frac{c}{v} \quad \quad \text{refractive index [$n$], speed of light in vacuum [$c$] = $\frac{m}{s}$, speed of light in material [$v$] = $\frac{m}{s}$}
+\frac{\sin i}{\sin b} = \frac{\lambda_1}{\lambda_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1} \quad \quad \text{angle of incidence [$i$], angle of refraction [$b$], wavelength in material 1 [$\lambda_1$] = $m$, wavelength in material 2 [$\lambda_2$] = $m$, speed in material 1 [$v_1$] = $\frac{m}{s}$, speed in material 2 [$v_2$] = $\frac{m}{s}$, refractive index of material 2 [$n_2$], refractive index of material 1 [$n_1$]}
+i = u \quad \quad \text{angle of incidence [$i$], angle of reflection [$u$]}
+\sin i_c = \frac{n_2}{n_1} \quad \quad \text{critical angle [$i_c$], refractive index of material 2 [$n_2$], refractive index of material 1 [$n_1$]}
+n \lambda = d \sin \varphi_n \quad \quad \text{order of maximum [$n$], wavelength [$\lambda$] = $m$, grating constant [$d$] = $m$, diffraction angle [$\varphi_n$]}
+E_{photon} = h f \quad \quad \text{photon energy [$E_{photon}$] = $J$, Planck's constant [$h$] = $J \cdot s$, frequency [$f$] = $Hz$}
+E_{photon} = E_n - E_m \quad \quad \text{photon energy [$E_{photon}$] = $J$, energy level n [$E_n$] = $J$, energy level m [$E_m$] = $J$}
+v_{sound} = 331 \sqrt{\frac{T}{273K}} \frac{m}{s} \quad \quad \text{speed of sound in air [$v_{sound}$] = $\frac{m}{s}$, air temperature [$T$] = $K$}
+\mu = \frac{m_{string}}{L} \quad \quad \text{linear mass density [$\mu$] = $\frac{kg}{m}$, string mass [$m_{string}$] = $kg$, string length [$L$] = $m$}
+v_{string} = \sqrt{\frac{F}{\mu}} \quad \quad \text{string wave speed [$v_{string}$] = $\frac{m}{s}$, string tension [$F$] = $N$, linear mass density [$\mu$] = $\frac{kg}{m}$}
+v = \frac{\Delta s}{\Delta t} \quad \quad \text{velocity [$v$] = $\frac{m}{s}$, change in displacement [$\Delta s$] = $m$, change in time [$\Delta t$] = $s$}
+s = v t + s_0 \quad \quad \text{displacement [$s$] = $m$, velocity [$v$] = $\frac{m}{s}$, time [$t$] = $s$, initial displacement [$s_0$] = $m$}
+a = \frac{\Delta v}{\Delta t} \quad \quad \text{acceleration [$a$] = $\frac{m}{s^2}$, change in velocity [$\Delta v$] = $\frac{m}{s}$, change in time [$\Delta t$] = $s$}
+v = a t + v_0 \quad \quad \text{velocity [$v$] = $\frac{m}{s}$, acceleration [$a$] = $\frac{m}{s^2}$, time [$t$] = $s$, initial velocity [$v_0$] = $\frac{m}{s}$}
+s = \frac{1}{2} a t^2 + v_0 t + s_0 \quad \quad \text{displacement [$s$] = $m$, acceleration [$a$] = $\frac{m}{s^2}$, time [$t$] = $s$, initial velocity [$v_0$] = $\frac{m}{s}$, initial displacement [$s_0$] = $m$}
+v^2 = v_0^2 + 2a(s - s_0) \quad \quad \text{final velocity [$v$] = $\frac{m}{s}$, initial velocity [$v_0$] = $\frac{m}{s}$, acceleration [$a$] = $\frac{m}{s^2}$, final displacement [$s$] = $m$, initial displacement [$s_0$] = $m$}
+F_g = m g \quad \quad \text{gravitational force [$F_g$] = $N$, mass [$m$] = $kg$, gravitational acceleration [$g$] = $\frac{m}{s^2}$}
+F_{spring} = -k x \quad \quad \text{spring force [$F_{spring}$] = $N$, spring constant [$k$] = $\frac{N}{m}$, displacement from equilibrium [$x$] = $m$}
+F_{buoyancy} = \rho_{liquid} V g \quad \quad \text{buoyant force [$F_{buoyancy}$] = $N$, density of liquid/gas [$\rho_{liquid}$] = $\frac{kg}{m^3}$, volume of object [$V$] = $m^3$, gravitational acceleration [$g$] = $\frac{m}{s^2}$}
+F_f = \mu F_N \quad \quad \text{friction force [$F_f$] = $N$, coefficient of friction [$\mu$], normal force [$F_N$] = $N$}
+F_{drag} = \frac{1}{2} c_W \rho A v^2 \quad \quad \text{air resistance [$F_{drag}$] = $N$, drag coefficient [$c_W$], air density [$\rho$] = $\frac{kg}{m^3}$, cross-sectional area [$A$] = $m^2$, velocity [$v$] = $\frac{m}{s}$}
+F_{net} = ma \quad \quad \text{net force [$F_{net}$] = $N$, mass [$m$] = $kg$, acceleration [$a$] = $\frac{m}{s^2}$}
+\Delta E = 0 \quad \quad \text{change in energy [$\Delta E$] = $J$}
+W = F s \cos(\phi) \quad \quad \text{work [$W$] = $J$, force [$F$] = $N$, displacement [$s$] = $m$, angle between force and displacement [$\phi$]}
+W_{spring} = -\frac{1}{2} k x^2 \quad \quad \text{work done by spring [$W_{spring}$] = $J$, spring constant [$k$] = $\frac{N}{m}$, displacement from equilibrium [$x$] = $m$}
+P = \frac{W}{t} = F v \quad \quad \text{power [$P$] = $W$, work [$W$] = $J$, time [$t$] = $s$, force [$F$] = $N$, velocity [$v$] = $\frac{m}{s}$}
+E_{kin} = \frac{1}{2} m v^2 \quad \quad \text{kinetic energy [$E_{kin}$] = $J$, mass [$m$] = $kg$, velocity [$v$] = $\frac{m}{s}$}
+E_{pot} = m g h \quad \quad \text{potential energy [$E_{pot}$] = $J$, mass [$m$] = $kg$, gravitational acceleration [$g$] = $\frac{m}{s^2}$, height [$h$] = $m$}
+E_{mech} = E_{kin} + E_{pot} \quad \quad \text{mechanical energy [$E_{mech}$] = $J$, kinetic energy [$E_{kin}$] = $J$, potential energy [$E_{pot}$] = $J$}
+I = I_0 (\frac{1}{2})^{\frac{x}{x_{1/2}}} \quad \quad \text{intensity [$I$], initial intensity [$I_0$], material thickness [$x$] = $m$, half-thickness [$x_{1/2}$] = $m$}
+N = N_0 (\frac{1}{2})^{\frac{t}{T_{1/2}}} \quad \quad \text{number of nuclei [$N$], initial number of nuclei [$N_0$], time [$t$] = $s$, half-life [$T_{1/2}$] = $s$}
+A = A_0 (\frac{1}{2})^{\frac{t}{T_{1/2}}} \quad \quad \text{activity [$A$] = $Bq$, initial activity [$A_0$] = $Bq$, time [$t$] = $s$, half-life [$T_{1/2}$] = $s$}
+A = k N \quad \quad \text{activity [$A$] = $Bq$, decay constant [$k$] = $s^{-1}$, number of nuclei [$N$]}
+k = \frac{\ln(2)}{T_{1/2}} \quad \quad \text{decay constant [$k$] = $s^{-1}$, half-life [$T_{1/2}$] = $s$}
+E = m c^2 \quad \quad \text{energy [$E$] = $J$, rest mass [$m$] = $kg$, speed of light in vacuum [$c$] = $\frac{m}{s}$}
+E_b = M_d c^2 \quad \quad \text{binding energy [$E_b$] = $J$, mass defect [$M_d$] = $kg$, speed of light in vacuum [$c$] = $\frac{m}{s}$}
+M_d = Z m_p + N m_n - M_k \quad \quad \text{mass defect [$M_d$] = $kg$, number of protons [$Z$], proton mass [$m_p$] = $kg$, number of neutrons [$N$], neutron mass [$m_n$] = $kg$, nuclear mass [$M_k$] = $kg$}
+M_{nucleus} = M_{atom} - Z m_e \quad \quad \text{nuclear mass [$M_{nucleus}$] = $kg$, atomic mass [$M_{atom}$] = $kg$, number of protons [$Z$], electron mass [$m_e$] = $kg$}
+\Delta S = n R \ln(\frac{T_2}{T_1}) + n C_{im} \ln(\frac{T_2}{T_1}) \quad \quad \text{change in entropy for reversible isobaric process [$\Delta S$] = $J/K$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperatures [$T_1, T_2$] = $K$, molar heat capacity at constant pressure [$C_{im}$] = $\frac{J}{mol \cdot K}$} 
+W = -p \Delta V = -n R \Delta T \quad \quad \text{work done for reversible isobaric process [$W$] = $J$, pressure [$p$] = $Pa$, change in volume [$\Delta V$] = $m^3$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, change in temperature [$\Delta T$] = $K$} 
+\Delta U = n C_{vm} \Delta T \quad \quad \text{change in internal energy for isobaric process [$\Delta U$] = $J$, amount of substance [$n$] = $mol$, molar heat capacity at constant volume [$C_{vm}$] = $\frac{J}{mol \cdot K}$, change in temperature [$\Delta T$] = $K$} 
+\Delta H = n C_{pm} \Delta T \quad \quad \text{change in enthalpy for isobaric process [$\Delta H$] = $J$, amount of substance [$n$] = $mol$, molar heat capacity at constant pressure [$C_{pm}$] = $\frac{J}{mol \cdot K}$, change in temperature [$\Delta T$] = $K$} 
+\Delta S = n C_{vm} \Delta T \quad \quad \text{change in entropy for reversible isochoric process [$\Delta S$] = $J/K$, amount of substance [$n$] = $mol$, molar heat capacity at constant volume [$C_{vm}$] = $\frac{J}{mol \cdot K}$, change in temperature [$\Delta T$] = $K$} 
+W = 0 \quad \quad \text{work done for reversible isochoric process [$W$] = $J$} 
+\Delta U = n C_{vm} \Delta T \quad \quad \text{change in internal energy for isochoric process [$\Delta U$] = $J$, amount of substance [$n$] = $mol$, molar heat capacity at constant volume [$C_{vm}$] = $\frac{J}{mol \cdot K}$, change in temperature [$\Delta T$] = $K$} 
+\Delta H = n C_{pm} \Delta T \quad \quad \text{change in enthalpy for isochoric process [$\Delta H$] = $J$, amount of substance [$n$] = $mol$, molar heat capacity at constant pressure [$C_{pm}$] = $\frac{J}{mol \cdot K}$, change in temperature [$\Delta T$] = $K$} 
+\Delta S = n R \ln(\frac{V_2}{V_1}) \quad \quad \text{change in entropy for reversible isothermal process [$\Delta S$] = $J/K$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, volumes [$V_1, V_2$] = $m^3$} 
+W = -n R T \ln(\frac{V_2}{V_1}) \quad \quad \text{work done for reversible isothermal process [$W$] = $J$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, volumes [$V_1, V_2$] = $m^3$} 
+\Delta U = 0 \quad \quad \text{change in internal energy for isothermal process [$\Delta U$] = $J$} 
+\Delta H = 0 \quad \quad \text{change in enthalpy for isothermal process [$\Delta H$] = $J$} 
+\Delta S = n R \ln(\frac{V_2}{V_1}) + n C_{vm} \ln(\frac{T_2}{T_1}) \quad \quad \text{change in entropy for reversible adiabatic process [$\Delta S$] = $J/K$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, volumes [$V_1, V_2$] = $m^3$, molar heat capacity at constant volume [$C_{vm}$] = $\frac{J}{mol \cdot K}$, temperatures [$T_1, T_2$] = $K$} 
+W = n C_{vm} \Delta T \quad \quad \text{work done for reversible adiabatic process [$W$] = $J$, amount of substance [$n$] = $mol$, molar heat capacity at constant volume [$C_{vm}$] = $\frac{J}{mol \cdot K}$, change in temperature [$\Delta T$] = $K$} 
+\Delta U = n C_{vm} \Delta T \quad \quad \text{change in internal energy for adiabatic process [$\Delta U$] = $J$, amount of substance [$n$] = $mol$, molar heat capacity at constant volume [$C_{vm}$] = $\frac{J}{mol \cdot K}$, change in temperature [$\Delta T$] = $K$} 
+\Delta H = n C_{pm} \Delta T \quad \quad \text{change in enthalpy for adiabatic process [$\Delta H$] = $J$, amount of substance [$n$] = $mol$, molar heat capacity at constant pressure [$C_{pm}$] = $\frac{J}{mol \cdot K}$, change in temperature [$\Delta T$] = $K$} 
+C_{pm} = C_{vm} + R \quad \quad \text{molar heat capacity at constant pressure [$C_{pm}$] = $\frac{J}{mol \cdot K}$, molar heat capacity at constant volume [$C_{vm}$] = $\frac{J}{mol \cdot K}$, gas constant [$R$] = $\frac{J}{mol \cdot K}$} 
+(\frac{\partial T}{\partial V})_{S} = (\frac{\partial p}{\partial S})_{V} \quad \quad \text{Maxwell relation for U} 
+(\frac{\partial T}{\partial p})_{S} = (\frac{\partial V}{\partial S})_{p} \quad \quad \text{Maxwell relation for H} 
+(\frac{\partial p}{\partial T})_{V} = (\frac{\partial S}{\partial V})_{T} \quad \quad \text{Maxwell relation for A} 
+(\frac{\partial V}{\partial T})_{p} = -(\frac{\partial S}{\partial p})_{T} \quad \quad \text{Maxwell relation for G} 
+\Delta S = n R \ln(\frac{V_2}{V_1}) \quad \quad \text{change in entropy [$\Delta S$] = $J/K$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, volumes [$V_1, V_2$] = $m^3$} 
+V_m = \frac{M}{\rho} \quad \quad \text{molar volume [$V_m$] = $m^3/mol$, molar mass [$M$] = $kg/mol$, density [$\rho$] = $kg/m^3$} 
+p = \frac{n R T}{V - n b} - a (\frac{n}{V})^2 \quad \quad \text{Van der Waals equation of state: pressure [$p$] = $Pa$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, volume [$V$] = $m^3$, Van der Waals constant b [$b$] = $m^3/mol$, Van der Waals constant a [$a$] = $Pa \cdot m^6 / mol^2$} 
+p = \frac{R T}{V_m - b} - \frac{a}{V_m^2} \quad \quad \text{Van der Waals equation of state (molar form): pressure [$p$] = $Pa$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, molar volume [$V_m$] = $m^3/mol$, Van der Waals constant b [$b$] = $m^3/mol$, Van der Waals constant a [$a$] = $Pa \cdot m^6 / mol^2$} 
+a = 3 p_c V_c^2 \quad \quad \text{Van der Waals constant a [$a$] = $Pa \cdot m^6 / mol^2$, critical pressure [$p_c$] = $Pa$, critical volume [$V_c$] = $m^3$} 
+b = \frac{1}{3} V_c \quad \quad \text{Van der Waals constant b [$b$] = $m^3/mol$, critical volume [$V_c$] = $m^3$} 
+p_r = \frac{p}{p_c} \quad \quad \text{reduced pressure [$p_r$], pressure [$p$] = $Pa$, critical pressure [$p_c$] = $Pa$} 
+T_r = \frac{T}{T_c} \quad \quad \text{reduced temperature [$T_r$], temperature [$T$] = $K$, critical temperature [$T_c$] = $K$} 
+V_r = \frac{V}{V_c} \quad \quad \text{reduced volume [$V_r$], volume [$V$] = $m^3$, critical volume [$V_c$] = $m^3$} 
+p_r = \frac{8 T_r}{3 V_r - 1} - \frac{3}{V_r^2} \quad \quad \text{Van der Waals equation with reduced variables: reduced pressure [$p_r$], reduced temperature [$T_r$], reduced volume [$V_r$]} 
+\pi_T = a (\frac{n}{V})^2 \quad \quad \text{internal pressure [$\pi_T$] = $Pa$, Van der Waals constant a [$a$] = $Pa \cdot m^6 / mol^2$, amount of substance [$n$] = $mol$, volume [$V$] = $m^3$} 
+\Delta S = \int_{i}^{f} \frac{dq_{rev}}{T} \quad \quad \text{definition of entropy: change in entropy [$\Delta S$] = $J/K$, reversible heat transfer [$dq_{rev}$] = $J$, temperature [$T$] = $K$} 
+dS \ge \frac{dq}{T} \quad \quad \text{Clausius inequality: change in entropy [$dS$] = $J/K$, heat transfer [$dq$] = $J$, temperature [$T$] = $K$} 
+\Delta S = n R \ln(\frac{V_2}{V_1}) + n C_{V,m} \ln(\frac{T_2}{T_1}) \quad \quad \text{change in entropy [$\Delta S$] = $J/K$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, volumes [$V_1, V_2$] = $m^3$, molar heat capacity at constant volume [$C_{V,m}$] = $\frac{J}{mol \cdot K}$, temperatures [$T_1, T_2$] = $K$} 
+\Delta S = n R \ln(\frac{V_2}{V_1}) = -n R \ln(\frac{p_2}{p_1}) \quad \quad \text{change in entropy for isothermal ideal gas [$\Delta S$] = $J/K$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, volumes [$V_1, V_2$] = $m^3$, pressures [$p_1, p_2$] = $Pa$} 
+\Delta S_{sur} = \frac{q_{sur}}{T_{sur}} \quad \quad \text{change in entropy of surroundings [$\Delta S_{sur}$] = $J/K$, heat of surroundings [$q_{sur}$] = $J$, temperature of surroundings [$T_{sur}$] = $K$} 
+\Delta S_{sur} = \frac{\Delta H_{sur}}{T_{sur}} \quad \quad \text{change in entropy of surroundings [$\Delta S_{sur}$] = $J/K$, change in enthalpy of surroundings [$\Delta H_{sur}$] = $J$, temperature of surroundings [$T_{sur}$] = $K$} 
+\Delta S_{sur} = 0 \quad \quad \text{change in entropy of surroundings for adiabatic process [$\Delta S_{sur}$] = $J/K$} 
+\Delta S_{sur} = 0 \quad \quad \text{change in entropy of surroundings for reversible process [$\Delta S_{sur}$] = $J/K$} 
+a = \frac{a_0}{Z} \quad \quad \text{constant a [$a$], Bohr radius [$a_0$] = $m$, atomic number [$Z$]} 
+p = \frac{h}{\lambda} \quad \quad \text{De Broglie relation: linear momentum [$p$] = $kg \cdot m/s$, Planck's constant [$h$] = $J \cdot s$, wavelength [$\lambda$] = $m$} 
+p = \frac{h}{\lambda} = \frac{n h}{2 L} \quad \quad \text{linear momentum for particle-in-a-box [$p$] = $kg \cdot m/s$, Planck's constant [$h$] = $J \cdot s$, wavelength [$\lambda$] = $m$, quantum number [$n$], box length [$L$] = $m$} 
+\Psi_n(x) = \sqrt{\frac{2}{L}} \sin(\frac{n \pi x}{L}) \quad \quad \text{wavefunction for particle-in-a-box [$\Psi_n(x)$], box length [$L$] = $m$, quantum number [$n$], position [$x$] = $m$} 
+E_n = \frac{n^2 h^2}{8 m L^2} \quad \quad \text{energy for particle-in-a-box [$E_n$] = $J$, quantum number [$n$], Planck's constant [$h$] = $J \cdot s$, mass [$m$] = $kg$, box length [$L$] = $m$} 
+E_{n+1} - E_n = (2n + 1) \frac{h^2}{8 m L^2} \quad \quad \text{energy difference for particle-in-a-box [$E_{n+1} - E_n$] = $J$, quantum number [$n$], Planck's constant [$h$] = $J \cdot s$, mass [$m$] = $kg$, box length [$L$] = $m$} 
+|\Psi|^2 = \frac{2}{L} \sin^2(\frac{n \pi x}{L}) \quad \quad \text{probability density for particle-in-a-box [$|\Psi|^2$], box length [$L$] = $m$, quantum number [$n$], position [$x$] = $m$} 
+\Psi \Psi_n d\tau = 0 \quad \quad \text{orthogonality condition for wavefunctions} 
+\tilde{\nu} = \frac{v}{c} = R (\frac{1}{n_1^2} - \frac{1}{n_2^2}) \quad \quad \text{Rydberg formula: wavenumber [$\tilde{\nu}$] = $m^{-1}$, frequency [$v$] = $Hz$, speed of light [$c$] = $m/s$, Rydberg constant [$R$] = $m^{-1}$, principal quantum numbers [$n_1, n_2$]} 
+\tilde{\nu} = Z^2 R_{\alpha} |\frac{1}{n_1^2} - \frac{1}{n_2^2}| \quad \quad \text{emission of light from hydrogenic atoms: wavenumber [$\tilde{\nu}$] = $m^{-1}$, atomic number [$Z$], Rydberg constant for hydrogenic atoms [$R_{\alpha}$] = $m^{-1}$, principal quantum numbers [$n_1, n_2$]}
+F = ma \quad \quad \text{Newton's Second Law: force [$F$] = $N$, mass [$m$] = $kg$, acceleration [$a$] = $\frac{m}{s^2}$}
+E = h\nu \quad \quad \text{Planck-Einstein relation: energy [$E$] = $J$, Planck's constant [$h$] = $J \cdot s$, frequency [$\nu$] = $Hz$}
+G = H - TS \quad \quad \text{Gibbs Free Energy: Gibbs free energy [$G$] = $J$, enthalpy [$H$] = $J$, temperature [$T$] = $K$, entropy [$S$] = $J/K$}
+\Delta G = \Delta H - T\Delta S \quad \quad \text{Change in Gibbs Free Energy: change in Gibbs free energy [$\Delta G$] = $J$, change in enthalpy [$\Delta H$] = $J$, temperature [$T$] = $K$, change in entropy [$\Delta S$] = $J/K$}
+\Delta G^\circ = -RT \ln K \quad \quad \text{Gibbs Free Energy and Equilibrium Constant: standard change in Gibbs free energy [$\Delta G^\circ$] = $J$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, equilibrium constant [$K$]}
+\Delta G = \Delta G^\circ + RT \ln Q \quad \quad \text{Gibbs Free Energy and Reaction Quotient: change in Gibbs free energy [$\Delta G$] = $J$, standard change in Gibbs free energy [$\Delta G^\circ$] = $J$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, reaction quotient [$Q$]}
+E = E^\circ - \frac{RT}{nF} \ln Q \quad \quad \text{Nernst Equation: cell potential [$E$] = $V$, standard cell potential [$E^\circ$] = $V$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, number of moles of electrons transferred [$n$], Faraday constant [$F$] = $\frac{C}{mol}$, reaction quotient [$Q$]}
+k = A e^{-\frac{E_a}{RT}} \quad \quad \text{Arrhenius Equation: rate constant [$k$], pre-exponential factor [$A$], activation energy [$E_a$] = $J/mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$}
+PV = nRT \quad \quad \text{Ideal Gas Law: pressure [$P$] = $Pa$, volume [$V$] = $m^3$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$}
+\lambda_{max} = \frac{b}{T} \quad \quad \text{Wien's Displacement Law: wavelength of maximum emission [$\lambda_{max}$] = $m$, Wien's displacement constant [$b$] = $m \cdot K$, temperature [$T$] = $K$}
+\rho_{rad} = \frac{8 \pi h}{c^3 \lambda^5} \frac{1}{e^{\frac{hc}{\lambda k T}} - 1} \quad \quad \text{Planck's Law (spectral radiance): spectral energy density [$\rho_{rad}$] = $J/m^3 \cdot m$, Planck's constant [$h$] = $J \cdot s$, speed of light [$c$] = $\frac{m}{s}$, wavelength [$\lambda$] = $m$, Boltzmann constant [$k$] = $J/K$, temperature [$T$] = $K$}
+F = G \frac{m_1 m_2}{r^2} \quad \quad \text{Newton's Law of Universal Gravitation: gravitational force [$F$] = $N$, gravitational constant [$G$] = $\frac{N \cdot m^2}{kg^2}$, mass 1 [$m_1$] = $kg$, mass 2 [$m_2$] = $kg$, distance between centers [$r$] = $m$}
+\tau = r F \sin\theta \quad \quad \text{Torque: torque [$\tau$] = $N \cdot m$, lever arm [$r$] = $m$, force [$F$] = $N$, angle between r and F [$\theta$]}
+L = I \omega \quad \quad \text{Angular Momentum: angular momentum [$L$] = $\frac{kg \cdot m^2}{s}$, moment of inertia [$I$] = $kg \cdot m^2$, angular velocity [$\omega$] = $\frac{rad}{s}$}
+\frac{d[A]}{dt} = -k[A] \quad \quad \text{First-Order Rate Law (differential form): rate of change of concentration of A [$\frac{d[A]}{dt}$] = $\frac{mol}{L \cdot s}$, rate constant [$k$] = $s^{-1}$, concentration of A [$[A]$] = $\frac{mol}{L}$}
+[A]_t = [A]_0 e^{-kt} \quad \quad \text{First-Order Rate Law (integrated form): concentration of A at time t [$[A]_t$] = $\frac{mol}{L}$, initial concentration of A [$[A]_0$] = $\frac{mol}{L}$, rate constant [$k$] = $s^{-1}$, time [$t$] = $s$}
+t_{1/2} = \frac{\ln 2}{k} \quad \quad \text{Half-life for First-Order Reaction: half-life [$t_{1/2}$] = $s$, rate constant [$k$] = $s^{-1}$}
+E_{kin,rot} = \frac{1}{2} I \omega^2 \quad \quad \text{Rotational Kinetic Energy: rotational kinetic energy [$E_{kin,rot}$] = $J$, moment of inertia [$I$] = $kg \cdot m^2$, angular velocity [$\omega$] = $\frac{rad}{s}$}
+\tau = I \alpha \quad \quad \text{Newton's Second Law for Rotation: torque [$\tau$] = $N \cdot m$, moment of inertia [$I$] = $kg \cdot m^2$, angular acceleration [$\alpha$] = $\frac{rad}{s^2}$}
+F = k_e \frac{|q_1 q_2|}{r^2} \quad \quad \text{Coulomb's Law: electric force [$F$] = $N$, Coulomb's constant [$k_e$] = $\frac{N \cdot m^2}{C^2}$, charge 1 [$q_1$] = $C$, charge 2 [$q_2$] = $C$, distance between charges [$r$] = $m$}
+E = \frac{F}{q_0} \quad \quad \text{Electric Field: electric field [$E$] = $\frac{N}{C}$, electric force [$F$] = $N$, test charge [$q_0$] = $C$}
+U = k_e \frac{q_1 q_2}{r} \quad \quad \text{Electric Potential Energy: electric potential energy [$U$] = $J$, Coulomb's constant [$k_e$] = $\frac{N \cdot m^2}{C^2}$, charge 1 [$q_1$] = $C$, charge 2 [$q_2$] = $C$, distance between charges [$r$] = $m$}
+V = \frac{U}{q_0} = k_e \frac{q}{r} \quad \quad \text{Electric Potential: electric potential [$V$] = $V$, electric potential energy [$U$] = $J$, test charge [$q_0$] = $C$, charge [$q$] = $C$, distance [$r$] = $m$}
+C = \frac{Q}{V} \quad \quad \text{Capacitance: capacitance [$C$] = $F$, charge [$Q$] = $C$, voltage [$V$] = $V$}
+E_{cap} = \frac{1}{2} C V^2 = \frac{1}{2} \frac{Q^2}{C} = \frac{1}{2} Q V \quad \quad \text{Energy Stored in Capacitor: energy [$E_{cap}$] = $J$, capacitance [$C$] = $F$, voltage [$V$] = $V$, charge [$Q$] = $C$}
+F = I L B \sin\theta \quad \quad \text{Force on a Current-Carrying Wire in Magnetic Field: force [$F$] = $N$, current [$I$] = $A$, length of wire [$L$] = $m$, magnetic field strength [$B$] = $T$, angle between current and magnetic field [$\theta$]}
+F = q v B \sin\theta \quad \quad \text{Force on a Moving Charge in Magnetic Field (Lorentz Force): force [$F$] = $N$, charge [$q$] = $C$, velocity [$v$] = $\frac{m}{s}$, magnetic field strength [$B$] = $T$, angle between velocity and magnetic field [$\theta$]}
+\Phi_B = B A \cos\theta \quad \quad \text{Magnetic Flux: magnetic flux [$\Phi_B$] = $Wb$, magnetic field strength [$B$] = $T$, area [$A$] = $m^2$, angle between magnetic field and area vector [$\theta$]}
+\epsilon = -N \frac{\Delta\Phi_B}{\Delta t} \quad \quad \text{Faraday's Law of Induction: induced EMF [$\epsilon$] = $V$, number of turns [$N$], change in magnetic flux [$\Delta\Phi_B$] = $Wb$, change in time [$\Delta t$] = $s$}
+X_L = \omega L \quad \quad \text{Inductive Reactance: inductive reactance [$X_L$] = $\Omega$, angular frequency [$\omega$] = $\frac{rad}{s}$, inductance [$L$] = $H$}
+X_C = \frac{1}{\omega C} \quad \quad \text{Capacitive Reactance: capacitive reactance [$X_C$] = $\Omega$, angular frequency [$\omega$] = $\frac{rad}{s}$, capacitance [$C$] = $F$}
+Z = \sqrt{R^2 + (X_L - X_C)^2} \quad \quad \text{Impedance (RLC Series Circuit): impedance [$Z$] = $\Omega$, resistance [$R$] = $\Omega$, inductive reactance [$X_L$] = $\Omega$, capacitive reactance [$X_C$] = $\Omega$}
+E = mc^2 \quad \quad \text{Mass-Energy Equivalence: energy [$E$] = $J$, mass [$m$] = $kg$, speed of light [$c$] = $\frac{m}{s}$}
+\Delta H^\circ_{rxn} = \sum n \Delta H^\circ_f (products) - \sum m \Delta H^\circ_f (reactants) \quad \quad \text{Standard Enthalpy of Reaction from Enthalpies of Formation: standard enthalpy of reaction [$\Delta H^\circ_{rxn}$] = $J$, stoichiometric coefficients [$n, m$], standard enthalpy of formation [$\Delta H^\circ_f$] = $J$}
+\Delta S^\circ_{rxn} = \sum n S^\circ (products) - \sum m S^\circ (reactants) \quad \quad \text{Standard Entropy of Reaction from Standard Molar Entropies: standard entropy of reaction [$\Delta S^\circ_{rxn}$] = $J/K$, stoichiometric coefficients [$n, m$], standard molar entropy [$S^\circ$] = $J/(mol \cdot K)$}
+\Delta G^\circ_{rxn} = \sum n \Delta G^\circ_f (products) - \sum m \Delta G^\circ_f (reactants) \quad \quad \text{Standard Gibbs Free Energy of Reaction from Standard Gibbs Free Energies of Formation: standard Gibbs free energy of reaction [$\Delta G^\circ_{rxn}$] = $J$, stoichiometric coefficients [$n, m$], standard Gibbs free energy of formation [$\Delta G^\circ_f$] = $J$}
+pH = -\log_{10}[H^+] \quad \quad \text{pH Definition: pH, hydrogen ion concentration [$[H^+]$] = $M$}
+pOH = -\log_{10}[OH^-] \quad \quad \text{pOH Definition: pOH, hydroxide ion concentration [$[OH^-]$] = $M$}
+pH + pOH = 14 \quad \quad \text{pH and pOH relationship}
+K_a = \frac{[H^+][A^-]}{[HA]} \quad \quad \text{Acid Dissociation Constant: acid dissociation constant [$K_a$], hydrogen ion concentration [$[H^+]$] = $M$, conjugate base concentration [$[A^-]$] = $M$, acid concentration [$[HA]$] = $M$}
+K_b = \frac{[BH^+][OH^-]}{[B]} \quad \quad \text{Base Dissociation Constant: base dissociation constant [$K_b$], conjugate acid concentration [$[BH^+]$] = $M$, hydroxide ion concentration [$[OH^-]$] = $M$, base concentration [$[B]$] = $M$}
+E = hf - \Phi \quad \quad \text{Photoelectric Effect (Kinetic Energy of Emitted Electron): kinetic energy of electron [$E$] = $J$, Planck's constant [$h$] = $J \cdot s$, frequency of incident light [$f$] = $Hz$, work function [$\Phi$] = $J$}
+\Delta x \Delta p \ge \frac{\hbar}{2} \quad \quad \text{Heisenberg Uncertainty Principle: uncertainty in position [$\Delta x$] = $m$, uncertainty in momentum [$\Delta p$] = $\frac{kg \cdot m}{s}$, reduced Planck's constant [$\hbar$] = $J \cdot s$}
+c = \lambda f \quad \quad \text{Speed of Light: speed of light [$c$] = $\frac{m}{s}$, wavelength [$\lambda$] = $m$, frequency [$f$] = $Hz$}
+F_{centripetal} = \frac{m v^2}{r} = m \omega^2 r \quad \quad \text{Centripetal Force: centripetal force [$F_{centripetal}$] = $N$, mass [$m$] = $kg$, tangential velocity [$v$] = $\frac{m}{s}$, radius [$r$] = $m$, angular velocity [$\omega$] = $\frac{rad}{s}$}
+KE_{avg} = \frac{3}{2} k_B T \quad \quad \text{Average Translational Kinetic Energy of Gas: average kinetic energy [$KE_{avg}$] = $J$, Boltzmann constant [$k_B$] = $J/K$, temperature [$T$] = $K$}
+v_{rms} = \sqrt{\frac{3 k_B T}{m}} = \sqrt{\frac{3 R T}{M}} \quad \quad \text{Root-Mean-Square Speed of Gas: root-mean-square speed [$v_{rms}$] = $\frac{m}{s}$, Boltzmann constant [$k_B$] = $J/K$, temperature [$T$] = $K$, mass of one molecule [$m$] = $kg$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, molar mass [$M$] = $kg/mol$}
+\mu = \frac{m}{n} \quad \quad \text{Molar Mass (alternative): molar mass [$\mu$] = $\frac{kg}{mol}$, mass [$m$] = $kg$, amount of substance [$n$] = $mol$}
+\Delta T_f = K_f m \quad \quad \text{Freezing Point Depression: change in freezing point [$\Delta T_f$] = $K$, cryoscopic constant [$K_f$] = $\frac{K \cdot kg}{mol}$, molality [$m$] = $\frac{mol}{kg}$}
+\Delta T_b = K_b m \quad \quad \text{Boiling Point Elevation: change in boiling point [$\Delta T_b$] = $K$, ebullioscopic constant [$K_b$] = $\frac{K \cdot kg}{mol}$, molality [$m$] = $\frac{mol}{kg}$}
+\Pi = i M R T \quad \quad \text{Osmotic Pressure: osmotic pressure [$\Pi$] = $Pa$, van't Hoff factor [$i$], molarity [$M$] = $\frac{mol}{L}$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$}
+E = \frac{hc}{\lambda} \quad \quad \text{Photon Energy (alternative): energy [$E$] = $J$, Planck's constant [$h$] = $J \cdot s$, speed of light [$c$] = $\frac{m}{s}$, wavelength [$\lambda$] = $m$}
+\lambda = \frac{h}{p} = \frac{h}{mv} \quad \quad \text{De Broglie Wavelength (alternative): wavelength [$\lambda$] = $m$, Planck's constant [$h$] = $J \cdot s$, momentum [$p$] = $\frac{kg \cdot m}{s}$, mass [$m$] = $kg$, velocity [$v$] = $\frac{m}{s}$}
+\hat{H}\Psi = E\Psi \quad \quad \text{Time-Independent Schrodinger Equation: Hamiltonian operator [$\hat{H}$], wavefunction [$\Psi$], energy [$E$] = $J$}
+\Delta E_{vib} = h \nu_{osc} = h \frac{1}{2\pi} \sqrt{\frac{k}{\mu}} \quad \quad \text{Vibrational Energy (Quantum Harmonic Oscillator): vibrational energy change [$\Delta E_{vib}$] = $J$, Planck's constant [$h$] = $J \cdot s$, oscillation frequency [$\nu_{osc}$] = $Hz$, force constant [$k$] = $N/m$, reduced mass [$\mu$] = $kg$}
+\Delta E_{rot} = B J(J+1) \quad \quad \text{Rotational Energy (Rigid Rotor): rotational energy change [$\Delta E_{rot}$] = $J$, rotational constant [$B$] = $J$, rotational quantum number [$J$]}
+a = r \alpha \quad \quad \text{Tangential Acceleration: tangential acceleration [$a$] = $\frac{m}{s^2}$, radius [$r$] = $m$, angular acceleration [$\alpha$] = $\frac{rad}{s^2}$}
+v = r \omega \quad \quad \text{Tangential Velocity: tangential velocity [$v$] = $\frac{m}{s}$, radius [$r$] = $m$, angular velocity [$\omega$] = $\frac{rad}{s}$}
+\omega = \omega_0 + \alpha t \quad \quad \text{Angular Velocity with Constant Angular Acceleration: final angular velocity [$\omega$] = $\frac{rad}{s}$, initial angular velocity [$\omega_0$] = $\frac{rad}{s}$, angular acceleration [$\alpha$] = $\frac{rad}{s^2}$, time [$t$] = $s$}
+\theta = \omega_0 t + \frac{1}{2} \alpha t^2 \quad \quad \text{Angular Displacement with Constant Angular Acceleration: angular displacement [$\theta$] = $rad$, initial angular velocity [$\omega_0$] = $\frac{rad}{s}$, time [$t$] = $s$, angular acceleration [$\alpha$] = $\frac{rad}{s^2}$}
+\omega^2 = \omega_0^2 + 2 \alpha \theta \quad \quad \text{Angular Velocity Squared with Constant Angular Acceleration: final angular velocity [$\omega$] = $\frac{rad}{s}$, initial angular velocity [$\omega_0$] = $\frac{rad}{s}$, angular acceleration [$\alpha$] = $\frac{rad}{s^2}$, angular displacement [$\theta$] = $rad$}
+I = \sum m_i r_i^2 \quad \quad \text{Moment of Inertia (Discrete Masses): moment of inertia [$I$] = $kg \cdot m^2$, mass of particle $i$ [$m_i$] = $kg$, distance of particle $i$ from axis of rotation [$r_i$] = $m$}
+KE_{rot} = \frac{1}{2} I \omega^2 \quad \quad \text{Rotational Kinetic Energy: rotational kinetic energy [$KE_{rot}$] = $J$, moment of inertia [$I$] = $kg \cdot m^2$, angular velocity [$\omega$] = $\frac{rad}{s}$}
+L = I \omega \quad \quad \text{Angular Momentum: angular momentum [$L$] = $\frac{kg \cdot m^2}{s}$, moment of inertia [$I$] = $kg \cdot m^2$, angular velocity [$\omega$] = $\frac{rad}{s}$}
+\tau = \frac{\Delta L}{\Delta t} \quad \quad \text{Torque as Rate of Change of Angular Momentum: torque [$\tau$] = $N \cdot m$, change in angular momentum [$\Delta L$] = $\frac{kg \cdot m^2}{s}$, change in time [$\Delta t$] = $s$}
+F_{grav} = -G \frac{m_1 m_2}{r^2} \hat{r} \quad \quad \text{Newton's Law of Universal Gravitation (Vector Form): gravitational force [$F_{grav}$] = $N$, gravitational constant [$G$] = $\frac{N \cdot m^2}{kg^2}$, mass 1 [$m_1$] = $kg$, mass 2 [$m_2$] = $kg$, distance between centers [$r$] = $m$, unit vector in direction of r [$\hat{r}$]}
+U_{grav} = -G \frac{m_1 m_2}{r} \quad \quad \text{Gravitational Potential Energy: gravitational potential energy [$U_{grav}$] = $J$, gravitational constant [$G$] = $\frac{N \cdot m^2}{kg^2}$, mass 1 [$m_1$] = $kg$, mass 2 [$m_2$] = $kg$, distance between centers [$r$] = $m$}
+v_{esc} = \sqrt{\frac{2 G M}{R}} \quad \quad \text{Escape Velocity: escape velocity [$v_{esc}$] = $\frac{m}{s}$, gravitational constant [$G$] = $\frac{N \cdot m^2}{kg^2}$, mass of planet/star [$M$] = $kg$, radius of planet/star [$R$] = $m$}
+T^2 = (\frac{4 \pi^2}{G M}) r^3 \quad \quad \text{Kepler's Third Law (Period): orbital period [$T$] = $s$, gravitational constant [$G$] = $\frac{N \cdot m^2}{kg^2}$, mass of central body [$M$] = $kg$, orbital radius [$r$] = $m$}
+P = \sigma A T^4 \quad \quad \text{Stefan-Boltzmann Law: power radiated [$P$] = $W$, Stefan-Boltzmann constant [$\sigma$] = $\frac{W}{m^2 \cdot K^4}$, surface area [$A$] = $m^2$, temperature [$T$] = $K$}
+Q = \dot{Q} \Delta t = k A \frac{\Delta T}{L} \Delta t \quad \quad \text{Heat Conduction (Rate): heat transferred [$Q$] = $J$, heat transfer rate [$\dot{Q}$] = $W$, thermal conductivity [$k$] = $\frac{W}{m \cdot K}$, area [$A$] = $m^2$, temperature difference [$\Delta T$] = $K$, thickness [$L$] = $m$, time interval [$\Delta t$] = $s$}
+\Delta S_{univ} = \Delta S_{sys} + \Delta S_{surr} \ge 0 \quad \quad \text{Second Law of Thermodynamics (Entropy of Universe): change in entropy of universe [$\Delta S_{univ}$] = $J/K$, change in entropy of system [$\Delta S_{sys}$] = $J/K$, change in entropy of surroundings [$\Delta S_{surr}$] = $J/K$}
+\mu_J = (\frac{\partial T}{\partial p})_H \quad \quad \text{Joule-Thomson Coefficient: Joule-Thomson coefficient [$\mu_J$] = $K/Pa$, temperature [$T$] = $K$, pressure [$p$] = $Pa$, constant enthalpy [$H$]}
+E_v = \frac{1}{2} \hbar \omega (v + \frac{1}{2}) \quad \quad \text{Vibrational Energy Levels (Quantum Harmonic Oscillator): vibrational energy [$E_v$] = $J$, reduced Planck's constant [$\hbar$] = $J \cdot s$, angular frequency [$\omega$] = $\frac{rad}{s}$, vibrational quantum number [$v$]}
+E_J = B J(J+1) \quad \quad \text{Rotational Energy Levels (Rigid Rotor): rotational energy [$E_J$] = $J$, rotational constant [$B$] = $J$, rotational quantum number [$J$]}
+P(v) = 4\pi (\frac{m}{2\pi k_B T})^{3/2} v^2 e^{-\frac{mv^2}{2k_B T}} \quad \quad \text{Maxwell-Boltzmann Speed Distribution: probability density function [$P(v)$] = $s/m$, mass of molecule [$m$] = $kg$, Boltzmann constant [$k_B$] = $J/K$, temperature [$T$] = $K$, speed [$v$] = $m/s$}
+Z = \sum_i e^{-\frac{E_i}{k_B T}} \quad \quad \text{Partition Function: partition function [$Z$], energy of state $i$ [$E_i$] = $J$, Boltzmann constant [$k_B$] = $J/K$, temperature [$T$] = $K$}
+A = -k_B T \ln Z \quad \quad \text{Helmholtz Free Energy from Partition Function: Helmholtz free energy [$A$] = $J$, Boltzmann constant [$k_B$] = $J/K$, temperature [$T$] = $K$, partition function [$Z$]}
+S = k_B \ln W \quad \quad \text{Boltzmann's Entropy Formula: entropy [$S$] = $J/K$, Boltzmann constant [$k_B$] = $J/K$, number of microstates [$W$]}
+\ln K = -\frac{\Delta H^\circ}{R T} + \frac{\Delta S^\circ}{R} \quad \quad \text{Van't Hoff Equation (Linearized): natural log of equilibrium constant [$\ln K$], standard enthalpy change [$\Delta H^\circ$] = $J$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, standard entropy change [$\Delta S^\circ$] = $J/K$}
+\ln(\frac{K_2}{K_1}) = -\frac{\Delta H^\circ}{R} (\frac{1}{T_2} - \frac{1}{T_1}) \quad \quad \text{Van't Hoff Equation (Two Temperatures): equilibrium constant at T2 [$K_2$], equilibrium constant at T1 [$K_1$], standard enthalpy change [$\Delta H^\circ$] = $J$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperatures [$T_1, T_2$] = $K$}
+\Delta_r G^\circ = -RT \ln K_p \quad \quad \text{Gibbs Free Energy and Equilibrium Constant (Gas Phase): standard Gibbs free energy of reaction [$\Delta_r G^\circ$] = $J$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, equilibrium constant in terms of partial pressures [$K_p$]}
+\frac{dP}{dT} = \frac{\Delta H_{vap}}{T \Delta V_{vap}} \quad \quad \text{Clapeyron Equation: derivative of vapor pressure with respect to temperature [$\frac{dP}{dT}$] = $Pa/K$, enthalpy of vaporization [$\Delta H_{vap}$] = $J/mol$, temperature [$T$] = $K$, change in molar volume upon vaporization [$\Delta V_{vap}$] = $m^3/mol$}
+\ln P = -\frac{\Delta H_{vap}}{R T} + C \quad \quad \text{Clausius-Clapeyron Equation (Integrated): natural log of vapor pressure [$\ln P$], enthalpy of vaporization [$\Delta H_{vap}$] = $J/mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, constant of integration [$C$]}
+\Delta_{mix} G = nRT \sum x_i \ln x_i \quad \quad \text{Gibbs Energy of Mixing (Ideal Solution): Gibbs energy of mixing [$\Delta_{mix} G$] = $J$, total moles [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, mole fraction of component i [$x_i$]}
+\Delta_{mix} S = -nR \sum x_i \ln x_i \quad \quad \text{Entropy of Mixing (Ideal Solution): entropy of mixing [$\Delta_{mix} S$] = $J/K$, total moles [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, mole fraction of component i [$x_i$]}
+\Delta_{mix} H = 0 \quad \quad \text{Enthalpy of Mixing (Ideal Solution): enthalpy of mixing [$\Delta_{mix} H$] = $J$}
+a_i = \gamma_i x_i \quad \quad \text{Activity of a Component: activity [$a_i$], activity coefficient [$\gamma_i$], mole fraction [$x_i$]}
+E = -\vec{\nabla} V \quad \quad \text{Electric Field as Negative Gradient of Potential: electric field [$E$] = $V/m$, electric potential [$V$] = $V$, del operator [$\vec{\nabla}$]}
+\vec{F} = q \vec{E} \quad \quad \text{Force on a Charge in an Electric Field: force [$\vec{F}$] = $N$, charge [$q$] = $C$, electric field [$\vec{E}$] = $N/C$}
+\Phi_E = \oint \vec{E} \cdot d\vec{A} = \frac{Q_{enc}}{\epsilon_0} \quad \quad \text{Gauss's Law for Electric Fields: electric flux [$\Phi_E$] = $\frac{N \cdot m^2}{C}$, electric field [$\vec{E}$] = $N/C$, area vector [$d\vec{A}$] = $m^2$, enclosed charge [$Q_{enc}$] = $C$, permittivity of free space [$\epsilon_0$] = $\frac{C^2}{N \cdot m^2}$}
+\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{enc} \quad \quad \text{Ampere's Law: magnetic field [$\vec{B}$] = $T$, infinitesimal displacement vector [$d\vec{l}$] = $m$, permeability of free space [$\mu_0$] = $\frac{T \cdot m}{A}$, enclosed current [$I_{enc}$] = $A$}
+\oint \vec{E} \cdot d\vec{l} = -\frac{d\Phi_B}{dt} \quad \quad \text{Faraday's Law (Integral Form): electric field [$\vec{E}$] = $N/C$, infinitesimal displacement vector [$d\vec{l}$] = $m$, magnetic flux [$\Phi_B$] = $Wb$, time [$t$] = $s$}
+\oint \vec{B} \cdot d\vec{A} = 0 \quad \quad \text{Gauss's Law for Magnetic Fields: magnetic field [$\vec{B}$] = $T$, area vector [$d\vec{A}$] = $m^2$}
+c = \frac{1}{\sqrt{\mu_0 \epsilon_0}} \quad \quad \text{Speed of Light in Terms of Permeability and Permittivity: speed of light [$c$] = $\frac{m}{s}$, permeability of free space [$\mu_0$] = $\frac{T \cdot m}{A}$, permittivity of free space [$\epsilon_0$] = $\frac{C^2}{N \cdot m^2}$}
+\nabla \cdot \vec{D} = \rho_f \quad \quad \text{Maxwell's Equation (Differential Form, Gauss's Law for Electric Displacement Field): electric displacement field [$\vec{D}$] = $\frac{C}{m^2}$, free charge density [$\rho_f$] = $\frac{C}{m^3}$}
+\nabla \cdot \vec{B} = 0 \quad \quad \text{Maxwell's Equation (Differential Form, Gauss's Law for Magnetism): magnetic field [$\vec{B}$] = $T$}
+\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} \quad \quad \text{Maxwell's Equation (Differential Form, Faraday's Law): electric field [$\vec{E}$] = $N/C$, magnetic field [$\vec{B}$] = $T$, time [$t$] = $s$}
+\nabla \times \vec{H} = \vec{J}_f + \frac{\partial \vec{D}}{\partial t} \quad \quad \text{Maxwell's Equation (Differential Form, Ampere-Maxwell Law): magnetic field strength [$\vec{H}$] = $A/m$, free current density [$\vec{J}_f$] = $\frac{A}{m^2}$, electric displacement field [$\vec{D}$] = $\frac{C}{m^2}$, time [$t$] = $s$}
+v_{sound} = \sqrt{\frac{B}{\rho}} \quad \quad \text{Speed of Sound in a Fluid: speed of sound [$v_{sound}$] = $\frac{m}{s}$, bulk modulus [$B$] = $Pa$, density [$\rho$] = $\frac{kg}{m^3}$}
+\beta = 10 \log_{10}(\frac{I}{I_0}) \quad \quad \text{Sound Intensity Level: sound intensity level [$\beta$] = $dB$, sound intensity [$I$] = $\frac{W}{m^2}$, reference intensity [$I_0$] = $10^{-12} \frac{W}{m^2}$}
+f' = f \frac{v \pm v_D}{v \mp v_S} \quad \quad \text{Doppler Effect (Sound): observed frequency [$f'$] = $Hz$, source frequency [$f$] = $Hz$, speed of sound in medium [$v$] = $\frac{m}{s}$, speed of detector [$v_D$] = $\frac{m}{s}$, speed of source [$v_S$] = $\frac{m}{s}$}
+\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i} \quad \quad \text{Thin Lens/Mirror Equation: focal length [$f$] = $m$, object distance [$d_o$] = $m$, image distance [$d_i$] = $m$}
+M = -\frac{d_i}{d_o} = \frac{h_i}{h_o} \quad \quad \text{Magnification: magnification [$M$], image distance [$d_i$] = $m$, object distance [$d_o$] = $m$, image height [$h_i$] = $m$, object height [$h_o$] = $m$}
+n_1 \sin\theta_1 = n_2 \sin\theta_2 \quad \quad \text{Snell's Law: refractive index of medium 1 [$n_1$], angle of incidence [$\theta_1$], refractive index of medium 2 [$n_2$], angle of refraction [$\theta_2$]}
+I = I_{max} \cos^2\theta \quad \quad \text{Malus's Law: transmitted intensity [$I$] = $\frac{W}{m^2}$, maximum intensity [$I_{max}$] = $\frac{W}{m^2}$, angle between polarizer axis and incident light polarization [$\theta$]}
+\lambda_C = \frac{h}{m_e c} \quad \quad \text{Compton Wavelength: Compton wavelength [$\lambda_C$] = $m$, Planck's constant [$h$] = $J \cdot s$, electron mass [$m_e$] = $kg$, speed of light [$c$] = $\frac{m}{s}$}
+\Delta \lambda = \lambda' - \lambda = \lambda_C (1 - \cos\theta) \quad \quad \text{Compton Shift: change in wavelength [$\Delta \lambda$] = $m$, scattered wavelength [$\lambda'$] = $m$, incident wavelength [$\lambda$] = $m$, Compton wavelength [$\lambda_C$] = $m$, scattering angle [$\theta$]}
+E_n = -\frac{13.6 eV}{n^2} \quad \quad \text{Energy Levels of Hydrogen Atom: energy [$E_n$] = $eV$, principal quantum number [$n$]}
+\Delta E = Z^2 R_H (\frac{1}{n_1^2} - \frac{1}{n_2^2}) \quad \quad \text{Energy of Photon for Hydrogenic Atoms: energy change [$\Delta E$] = $J$, atomic number [$Z$], Rydberg constant for hydrogen [$R_H$] = $J$, initial principal quantum number [$n_1$], final principal quantum number [$n_2$]}
+E = pc \quad \quad \text{Energy-Momentum Relation (for photons/massless particles): energy [$E$] = $J$, momentum [$p$] = $\frac{kg \cdot m}{s}$, speed of light [$c$] = $\frac{m}{s}$}
+P = \frac{F_{avg}}{\Delta t} \quad \quad \text{Impulse-Momentum Theorem (average force): impulse [$P$] = $N \cdot s$, average force [$F_{avg}$] = $N$, change in time [$\Delta t$] = $s$}
+F_{spring} = -k x \quad \quad \text{Hooke's Law: spring force [$F_{spring}$] = $N$, spring constant [$k$] = $\frac{N}{m}$, displacement from equilibrium [$x$] = $m$}
+U_{spring} = \frac{1}{2} k x^2 \quad \quad \text{Elastic Potential Energy of a Spring: elastic potential energy [$U_{spring}$] = $J$, spring constant [$k$] = $\frac{N}{m}$, displacement from equilibrium [$x$] = $m$}
+T = 2\pi \sqrt{\frac{L}{g}} \quad \quad \text{Period of Simple Pendulum: period [$T$] = $s$, length of pendulum [$L$] = $m$, acceleration due to gravity [$g$] = $\frac{m}{s^2}$}
+T = 2\pi \sqrt{\frac{m}{k}} \quad \quad \text{Period of Mass-Spring System: period [$T$] = $s$, mass [$m$] = $kg$, spring constant [$k$] = $\frac{N}{m}$}
+f_n = n \frac{v}{2L} \quad \quad \text{Frequencies of Standing Waves on a String (Fixed Ends): frequency of nth harmonic [$f_n$] = $Hz$, harmonic number [$n$], wave speed [$v$] = $\frac{m}{s}$, length of string [$L$] = $m$}
+f_n = n \frac{v}{4L} \quad \quad \text{Frequencies of Standing Waves in Air Column (One End Open): frequency of nth harmonic [$f_n$] = $Hz$, harmonic number [$n$] (odd integers), wave speed [$v$] = $\frac{m}{s}$, length of column [$L$] = $m$}
+\Delta L = L_0 \alpha \Delta T \quad \quad \text{Linear Thermal Expansion: change in length [$\Delta L$] = $m$, original length [$L_0$] = $m$, coefficient of linear thermal expansion [$\alpha$] = $K^{-1}$, change in temperature [$\Delta T$] = $K$}
+\Delta V = V_0 \beta \Delta T \quad \quad \text{Volume Thermal Expansion: change in volume [$\Delta V$] = $m^3$, original volume [$V_0$] = $m^3$, coefficient of volume thermal expansion [$\beta$] = $K^{-1}$, change in temperature [$\Delta T$] = $K$}
+K = \frac{Q}{W} \quad \quad \text{Coefficient of Performance (Refrigerator): coefficient of performance [$K$], heat removed from cold reservoir [$Q$] = $J$, work done [$W$] = $J$}
+e = \frac{|W_{net}|}{|Q_H|} = 1 - \frac{|Q_C|}{|Q_H|} \quad \quad \text{Efficiency of Heat Engine: efficiency [$e$], net work done [$W_{net}$] = $J$, heat absorbed from hot reservoir [$Q_H$] = $J$, heat expelled to cold reservoir [$Q_C$] = $J$}
+e_{Carnot} = 1 - \frac{T_C}{T_H} \quad \quad \text{Carnot Efficiency: Carnot efficiency [$e_{Carnot}$], temperature of cold reservoir [$T_C$] = $K$, temperature of hot reservoir [$T_H$] = $K$}
+E_{reaction} = \Delta m c^2 \quad \quad \text{Energy Released in Nuclear Reaction: energy released [$E_{reaction}$] = $J$, mass defect [$\Delta m$] = $kg$, speed of light [$c$] = $\frac{m}{s}$}
+\lambda = \frac{\ln(2)}{T_{1/2}} \quad \quad \text{Decay Constant (from Half-life): decay constant [$\lambda$] = $s^{-1}$, half-life [$T_{1/2}$] = $s$}
+N(t) = N_0 e^{-\lambda t} \quad \quad \text{Radioactive Decay (Number of Nuclei): number of nuclei at time t [$N(t)$], initial number of nuclei [$N_0$], decay constant [$\lambda$] = $s^{-1}$, time [$t$] = $s$}
+A(t) = A_0 e^{-\lambda t} \quad \quad \text{Radioactive Decay (Activity): activity at time t [$A(t)$] = $Bq$, initial activity [$A_0$] = $Bq$, decay constant [$\lambda$] = $s^{-1}$, time [$t$] = $s$}
+PV = \text{constant} \quad \quad \text{Boyle's Law (Constant Temperature, Fixed Amount of Gas): pressure [$P$] = $Pa$, volume [$V$] = $m^3$}
+\frac{V}{T} = \text{constant} \quad \quad \text{Charles's Law (Constant Pressure, Fixed Amount of Gas): volume [$V$] = $m^3$, temperature [$T$] = $K$}
+\frac{P}{T} = \text{constant} \quad \quad \text{Gay-Lussac's Law (Constant Volume, Fixed Amount of Gas): pressure [$P$] = $Pa$, temperature [$T$] = $K$}
+V_m = \frac{RT}{P} \quad \quad \text{Molar Volume of Ideal Gas: molar volume [$V_m$] = $m^3/mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$, pressure [$P$] = $Pa$}
+C_V = (\frac{\partial U}{\partial T})_V \quad \quad \text{Heat Capacity at Constant Volume: heat capacity at constant volume [$C_V$] = $J/K$, internal energy [$U$] = $J$, temperature [$T$] = $K$, constant volume [$V$]}
+C_P = (\frac{\partial H}{\partial T})_P \quad \quad \text{Heat Capacity at Constant Pressure: heat capacity at constant pressure [$C_P$] = $J/K$, enthalpy [$H$] = $J$, temperature [$T$] = $K$, constant pressure [$P$]}
+\Delta U = Q + W \quad \quad \text{First Law of Thermodynamics (Alternative Form): change in internal energy [$\Delta U$] = $J$, heat [$Q$] = $J$, work done [$W$] = $J$}
+U = \frac{3}{2} n R T \quad \quad \text{Internal Energy of Monatomic Ideal Gas: internal energy [$U$] = $J$, amount of substance [$n$] = $mol$, gas constant [$R$] = $\frac{J}{mol \cdot K}$, temperature [$T$] = $K$}
+H = U + PV \quad \quad \text{Enthalpy Definition: enthalpy [$H$] = $J$, internal energy [$U$] = $J$, pressure [$P$] = $Pa$, volume [$V$] = $m^3$}
+A = U - TS \quad \quad \text{Helmholtz Free Energy Definition: Helmholtz free energy [$A$] = $J$, internal energy [$U$] = $J$, temperature [$T$] = $K$, entropy [$S$] = $J/K$}
+G = H - TS \quad \quad \text{Gibbs Free Energy Definition: Gibbs free energy [$G$] = $J$, enthalpy [$H$] = $J$, temperature [$T$] = $K$, entropy [$S$] = $J/K$}

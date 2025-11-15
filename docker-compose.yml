@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  formula-finder:
+    image: ghcr.io/froemosen/formula-finder:latest
+    container_name: formula-finder
+    build: .
+    restart: always
+    expose:
+      - "5001"

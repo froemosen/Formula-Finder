@@ -374,3 +374,28 @@ function showInfo(event, formula) {
     });
 }
 
+function makeExample() {
+    // Add a second input field first
+    addInputField();
+    
+    // Wait a moment for DOM to update, then set values and find formulas
+    setTimeout(() => {
+        const symbol0 = document.getElementById("symbol0");
+        const unit0 = document.getElementById("unit0");
+        const symbol1 = document.getElementById("symbol1");
+        const unit1 = document.getElementById("unit1");
+        
+        if (symbol0 && unit0 && symbol1 && unit1) {
+            symbol0.value = "U";
+            unit0.value = "";
+            symbol1.value = "";
+            unit1.value = "\\Omega";
+            toggleInputs(0);
+            toggleInputs(1);
+            
+            // Automatically find and display formulas
+            findFormula();
+        }
+    }, 100);
+}
+

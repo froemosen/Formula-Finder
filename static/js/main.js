@@ -130,13 +130,11 @@ function findFormula() {
 
     for (let i = 0; i <= inputCount; i++) {
         const symbolElement = document.getElementById(`symbol${i}`);
-        const valueElement = document.getElementById(`value${i}`);
         const unitElement = document.getElementById(`unit${i}`);
 
         const symbol = symbolElement ? symbolElement.value.trim() : "";
-        const value = valueElement ? valueElement.value.trim() : "";
         const unit = unitElement ? unitElement.value.trim() : "";
-        console.log(`Processing input ${i}: Symbol=${symbol}, Value=${value}, Unit=${unit}`);
+        console.log(`Processing input ${i}: Symbol=${symbol}, Unit=${unit}`);
 
         if (symbol != "") {
             symbols.add(symbol);
@@ -176,7 +174,6 @@ function findFormula() {
                     if (valid) {
                         console.log("Adding formula:", formula);
                         formulas.push(formula);
-                        console.log("Current formulas:", formulas);
                     }
                     
                 }
@@ -229,6 +226,7 @@ document.querySelectorAll('.latexInput').forEach(input => {
     input.addEventListener('focus', () => {
         activeInput = input;
     });
+    
 });
 
 function insertSymbol(event, symbol) {
@@ -250,41 +248,77 @@ function insertSymbol(event, symbol) {
 
 let inputCount = 0; 
 
+function toggleInputs(index) {
+    const symbolInput = document.getElementById(`symbol${index}`);
+    const unitInput = document.getElementById(`unit${index}`);
+    
+    if (symbolInput && unitInput) {
+        if (symbolInput.value.trim() !== "") {
+            unitInput.disabled = true;
+            unitInput.style.opacity = "0.5";
+            unitInput.style.cursor = "not-allowed";
+        } else {
+            unitInput.disabled = false;
+            unitInput.style.opacity = "1";
+            unitInput.style.cursor = "text";
+        }
+        
+        if (unitInput.value.trim() !== "") {
+            symbolInput.disabled = true;
+            symbolInput.style.opacity = "0.5";
+            symbolInput.style.cursor = "not-allowed";
+        } else {
+            symbolInput.disabled = false;
+            symbolInput.style.opacity = "1";
+            symbolInput.style.cursor = "text";
+        }
+    }
+}
+
 function addInputField() {
     inputCount++;
+    const currentIndex = inputCount; // Capture the current value
     const container = document.createElement("div");
     container.style.display = "flex";
     container.style.gap = "10px";
-    container.id = `inputGroup${inputCount}`;
+    container.style.alignItems = "center";
+    container.id = `inputGroup${currentIndex}`;
+
+    const label = document.createElement("p");
+    label.style.marginLeft = "50px";
+    label.textContent = `Input ${currentIndex + 1}:`;
+    container.appendChild(label);
 
     const symbolInput = document.createElement("input");
     symbolInput.type = "text";
     symbolInput.className = "latexInput";
-    symbolInput.id = `symbol${inputCount}`;
+    symbolInput.id = `symbol${currentIndex}`;
     symbolInput.placeholder = "Symbol";
-    symbolInput.style.width = "50px";
-
-    const valueInput = document.createElement("input");
-    valueInput.type = "text";
-    valueInput.className = "latexInput";
-    valueInput.id = `value${inputCount}`;
-    valueInput.placeholder = "Value";
-    valueInput.style.width = "150px";
+    symbolInput.style.width = "80px";
+    symbolInput.oninput = () => toggleInputs(currentIndex);
 
     const unitInput = document.createElement("input");
     unitInput.type = "text";
     unitInput.className = "latexInput";
-    unitInput.id = `unit${inputCount}`;
+    unitInput.id = `unit${currentIndex}`;
     unitInput.placeholder = "Unit";
-    unitInput.style.width = "50px";
+    unitInput.style.width = "80px";
+    unitInput.oninput = () => toggleInputs(currentIndex);
+
+    // Add focus event listeners for symbol insertion
+    symbolInput.addEventListener('focus', () => {
+        activeInput = symbolInput;
+    });
+    unitInput.addEventListener('focus', () => {
+        activeInput = unitInput;
+    });
 
     container.appendChild(symbolInput);
-    container.appendChild(valueInput);
     container.appendChild(unitInput);
 
     // Insert new line immediately after the last input line
     const parent = document.querySelector(".container");
-    const firstInputLine = document.getElementById(`inputGroup${inputCount-1}`);
+    const firstInputLine = document.getElementById(`inputGroup${currentIndex-1}`);
     parent.insertBefore(container, firstInputLine.nextSibling);
 }
 
@@ -298,12 +332,14 @@ function removeInputField() {
 
 function renderLatex(formulas) {
     const outputDiv = document.getElementById("result");
-    outputDiv.innerHTML = formulas.map(formula => {
+    outputDiv.innerHTML =  "<hr>" + formulas.map(formula => {
         const parts = formula.split(/\\quad (.*)/);
         console.log("Infobox formula is: ", parts);
         console.log("Infobox will be filled with: ", parts[1].replaceAll("\\", "¤"));
-        return `<div>\\(${parts[0]}\\)</div>
-            <button class="infobutton" onclick="showInfo(event, '${parts[1].replaceAll("\\", "¤")}')">?</button>`
+        return `<div class="formula-container"> <div>\\(${parts[0]}\\)</div>
+        <button class="infobutton" onclick="showInfo(event, '${parts[1].replaceAll("\\", "¤")}')">?</button>
+        <hr>
+        </div>`;
     }).join('');
 
     MathJax.typesetPromise();

@@ -26,22 +26,20 @@
         <p>Use LaTeX symbols or units in the text fields, or select from the menu below.</p>
         
         <div style="display: flex; gap: 10px;" id="inputGroup0">
-            <input type="text" class="latexInput" id="symbol0" placeholder="Symbol" style="width: 50px;">
-            <input type="text" class="latexInput" id="value0" placeholder="Value" style="width: 150px;">
-            <input type="text" class="latexInput" id="unit0" placeholder="Unit" style="width: 50px;">
+            <p style="margin-left: 50px">Input 1:</p>
+            <input type="text" class="latexInput" id="symbol0" placeholder="Symbol" style="width: 80px; " oninput="toggleInputs(0)">
+            <input type="text" class="latexInput" id="unit0" placeholder="Unit" style="width: 80px;" oninput="toggleInputs(0)">
         </div>
         
         <div style="text-align: center; margin-top: 10px;">
-            <button class="small-button" onclick="addInputField()">+</button1>
-            <button class="small-button" onclick="removeInputField()">-</button1>
+            <button class="small-button" onclick="addInputField()">+</button>
+            <button class="small-button" onclick="removeInputField()">-</button>
         </div>
 
         <button onclick="findFormula()">Find Formulas!</button>
 
         <p id="result"></p>
 
-        <button onclick="fetchGreeting("hello")">Fetch Greeting</button>
-        <p id="greeting"></p>
     </div>
 
     <div class = "symbol-box">
@@ -76,14 +74,10 @@
             <button onmousedown="insertSymbol(event, '\\tau')">\( \tau \)</button>
             <button onmousedown="insertSymbol(event, '\\sum')">\( \sum \)</button>
             <button onmousedown="insertSymbol(event, '\\Phi')">\( \Phi \)</button>
-            
-
-
+        </div>
+    </div>
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
-
 </body>
-
-
 </html>

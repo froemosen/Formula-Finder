@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Formula Finder</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body>
+<body onload="makeExample()">
     <nav class="sidebar">
         <h2>Navigation</h2>
         <a href="/">Formula Finder</a> <br>
@@ -18,10 +19,26 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Formula Finder - Example</h1>
+     <div class="container">
+        <h1>Formula Finder - Example use</h1>
+    
+        <p>Below is an example usage of the Formula Finder tool.</p>
         
-        Yet to be implemented. This page will demonstrate how to use the Formula Finder with example inputs and outputs.
+        <div style="display: flex; gap: 10px;" id="inputGroup0">
+            <p style="margin-left: 50px">Input 1:</p>
+            <input type="text" class="latexInput" id="symbol0" placeholder="Symbol" style="width: 80px; " oninput="toggleInputs(0)">
+            <input type="text" class="latexInput" id="unit0" placeholder="Unit" style="width: 80px;" oninput="toggleInputs(0)">
+        </div>
+        
+        <div style="text-align: center; margin-top: 10px;">
+            <button class="small-button" onclick="addInputField()">+</button>
+            <button class="small-button" onclick="removeInputField()">-</button>
+        </div>
+
+        <button onclick="findFormula()">Find Formulas!</button>
+
+        <p id="result"></p>
+
     </div>
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>

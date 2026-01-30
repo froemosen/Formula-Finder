@@ -10,7 +10,9 @@ log = {
     "example_visits": 0,
     "latex_visits": 0,
     "greeting_api_calls": 0,
-    "log_api_calls": 0
+    "log_api_calls": 0,
+    "formula_successes": 0,
+    "formula_fails": 0
 }
 
 @app.route("/")
@@ -51,6 +53,18 @@ def log_api():
     print("-----------------------------")
     
     return jsonify({"status": "Successfully logged stats to backend console."})
+
+
+@app.route("/api/formulafound")
+def formula_searched():
+    log["formula_successes"] += 1
+    return jsonify({"status": "Formula search logged."})
+
+
+@app.route("/api/formulafailed")
+def formula_searched():
+    log["formula_fails"] += 1
+    return jsonify({"status": "Formula search logged."})
 
 @app.route("/favicon.ico")
 def favicon():

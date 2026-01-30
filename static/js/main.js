@@ -179,6 +179,13 @@ function findFormula() {
                 }
             }
             console.log("Final formulas:", formulas);
+            if (formulas.length == 0) {
+                fetch("/api/formulafailed");
+                formulas = ["\\text{No formula found}"];
+            }
+            else {
+                fetch("/api/formulafound");
+            }
             renderLatex(formulas);
         });
 }

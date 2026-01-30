@@ -3,28 +3,52 @@ import os
 
 app = Flask(__name__)
 
+log = {
+    "index_visits": 0,
+    "about_visits": 0,
+    "example_visits": 0,
+    "latex_visits": 0,
+    "greeting_api_calls": 0,
+    "log_api_calls": 0
+}
+
 @app.route("/")
 def index():
+    log["index_visits"] += 1
     return render_template("index.html")
 
 
 @app.route("/about")
 def about():
+    log["about_visits"] += 1
     return render_template("about.html")
 
 @app.route("/example")
 def example():
+    log["example_visits"] += 1
     return render_template("example.html")
 
 @app.route("/latex")
 def latex():
+    log["latex_visits"] += 1
     return render_template("latex.html")
 
 
 # Example API endpoint
 @app.route("/api/greeting")
 def greeting():
+    log["greeting_api_calls"] += 1
     return jsonify({"message": "Hello from Flask!"})
+
+@app.route("/api/log")
+def log_api():
+    log["log_api_calls"] += 1
+    print("----- Backend Log Stats -----")
+    for key, value in log.items():
+        print(f"{key}: {value}")
+    print("-----------------------------")
+    
+    return jsonify({"status": "Successfully logged stats to backend console."})
 
 @app.route("/favicon.ico")
 def favicon():

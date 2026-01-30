@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify, send_from_directory
 import os
+from datetime import datetime, timezone
 
 app = Flask(__name__)
 
@@ -44,6 +45,7 @@ def greeting():
 def log_api():
     log["log_api_calls"] += 1
     print("----- Backend Log Stats -----")
+    print(f"[{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S +0000')}]")
     for key, value in log.items():
         print(f"{key}: {value}")
     print("-----------------------------")

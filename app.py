@@ -62,7 +62,7 @@ def formula_searched():
 
 
 @app.route("/api/formulafailed")
-def formula_searched():
+def formula_failed():
     log["formula_fails"] += 1
     return jsonify({"status": "Formula search logged."})
 
